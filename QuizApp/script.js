@@ -3,7 +3,6 @@ const scoreDisplay = document.querySelector('#user-score');
 
 let userScore = 0;
 
-const category = 15;
 const count = 1;
 const difficulty = ['easy', 'medium', 'hard'];
 
@@ -71,7 +70,7 @@ function flipCard(){
     const falseButton = document.createElement('button');
     trueButton.textContent = 'True';
     falseButton.textContent = 'False';
-    textDisplay.innerText = this.getAttribute('data-question');
+    textDisplay.innerHTML = this.getAttribute('data-question');
     this.append(textDisplay,trueButton,falseButton);
     const allCards = Array.from(document.querySelectorAll('.card'));
     allCards.forEach(card => card.removeEventListener('click',flipCard));
