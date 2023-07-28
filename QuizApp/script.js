@@ -29,6 +29,10 @@ function addGenre(genre){
     const column = document.createElement('div');
     column.classList.add('genre-column');
     
+    const columnHeader = document.createElement('h1');
+    columnHeader.textContent = genre.name;
+    column.appendChild(columnHeader);
+
     difficulty.forEach(difficultyLevel =>{
 
         const card = document.createElement('div');
