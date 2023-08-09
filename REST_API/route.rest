@@ -1,0 +1,31 @@
+###
+
+GET http://127.0.0.1:3000/users/64d37e76c0c700d347ffc1ae
+
+###
+
+POST http://127.0.0.1:3000/users
+Content-Type: application/json
+
+{
+    "name": "Tom",
+    "nationality": "Poland"
+}
+
+###
+
+GET http://127.0.0.1:3000/users
+
+###
+
+DELETE http://127.0.0.1:3000/users/64d37e76c0c700d347ffc1ae
+
+###
+
+PATCH http://127.0.0.1:3000/users/64d381b06a7a30abd1fd0428
+Content-Type: application/json
+
+{
+    "name": "Thomas",
+    "nationality": "USA"
+}
